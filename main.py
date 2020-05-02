@@ -11,7 +11,7 @@ options = Options()
 options.headless = True
 driver = webdriver.Firefox(options = options , executable_path='/root/firefox/geckodriver')
 print("please enter the URL address")
-url = str(sys.argv[0])
+url = str(sys.argv[1])
 driver.implicitly_wait(30)
 driver.get(url)
 email = driver.find_element_by_id('identifierId')
