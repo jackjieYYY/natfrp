@@ -37,6 +37,4 @@ driver.save_screenshot("screenshot.png")
 while True:
     time.sleep(60)
     driver.save_screenshot("screenshot.png")
-    driver.get(url)
-
 
