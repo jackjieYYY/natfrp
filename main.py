@@ -9,7 +9,7 @@ import sys
 
 options = Options()
 options.headless = True
-driver = webdriver.Firefox(options = options , executable_path='/root/firefox/geckodriver')
+driver = webdriver.Firefox(options = options)
 print("please enter the URL address")
 url = str(sys.argv[1])
 driver.implicitly_wait(30)
