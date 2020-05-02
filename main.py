@@ -3,10 +3,16 @@ from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.firefox.options import Options
+import geckodriver_autoinstaller
 import json
 import time
 import sys
 
+
+
+geckodriver_autoinstaller.install()  # Check if the current version of geckodriver exists
+                                     # and if it doesn't exist, download it automatically,
+                                     # then add geckodriver to path
 options = Options()
 options.headless = True
 driver = webdriver.Firefox(options = options)
